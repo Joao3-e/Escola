@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações pessoais</title>
+    <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the page body */
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* Updated to use Roboto for a modern look */
+            background-color: #e8ecef; /* Light gray-blue background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Style the "Sobre mim" header */
+        div {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Style the profile card paragraphs */
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            padding: 12px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow for card effect */
+            border: 1px solid #ddd; /* Added subtle border */
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Style the image */
+        img {
+            margin-top: 20px;
+            width: 200px; /* Fixed size for circular image */
+            height: 200px;
+            border-radius: 50%; /* Circular shape */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            object-fit: cover; /* Ensure image fits within circle */
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for image */
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            div {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            img {
+                width: 150px; /* Smaller image on mobile */
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Sobre mim</div>
+    <p>Nome: João Victor Marques da Silva</p>
+    <p>Idade: 18</p>
+    <p>Hobbie: Dormir</p>
+    <p>Prefiro dormir do que qualquer coisa</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-4nE-bOnNVqfWz0lW1w2RDUGHV3jejeN3KA&s" alt="Imagem">
+</body>
+</html>
